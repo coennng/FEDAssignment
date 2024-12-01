@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bukit Batok Driving Centre</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex-wrapper">
+
+<header>
+    <img src="images/logo.png" alt="Bukit Batok Driving Centre Logo" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="location.html">Location</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <section class="dashboard-banner">
+        <h1>Welcome to Your Dashboard!</h1>
+        <p>Manage your driving lessons and payments conveniently.</p>
+    </section>
+
+    <section class="dashboard-grid">
+        <div class="dashboard-card">
+            <h2>Available Lesson Days</h2>
+            <ul class="available-days">
+                <li>Monday - 9:00 AM to 5:00 PM</li>
+                <li>Wednesday - 9:00 AM to 5:00 PM</li>
+                <li>Friday - 9:00 AM to 5:00 PM</li>
+                <li>Saturday - 9:00 AM to 3:00 PM</li>
+            </ul>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>Book Online Lesson</h2>
+            <form id="online-lesson-form">
+                <label for="lesson-date">Choose a Date:</label>
+                <input type="date" id="lesson-date" name="lesson-date" required>
+
+                <label for="lesson-time">Choose a Time:</label>
+                <select id="lesson-time" name="lesson-time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+
+                <button type="submit">Book Lesson</button>
+            </form>
+            <div id="lesson-confirmation" class="confirmation-message" style="display: none; color: green; margin-top: 15px;">
+                Your lesson has been successfully booked for <span id="booking-date"></span> at <span id="booking-time"></span>!
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>Top Up Account with PayNow</h2>
+            <p>PayNow UEN: <strong>123456789D</strong></p>
+            <p>Scan the QR code or use the UEN to top up your account.</p>
+            <img src="images/paynow.png" alt="PayNow QR Code" class="paynow-qr">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Bukit Batok Driving Centre Ltd</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

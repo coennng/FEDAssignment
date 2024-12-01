@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Bukit Batok Driving Centre</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Bukit Batok Driving Centre Logo" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="location.html">Location</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h1>We Value Your Feedback</h1>
+    <p>Your opinion helps us improve!</p>
+</section>
+
+<section class="feedback-form">
+    <h2>Feedback</h2>
+    <form id="feedbackForm">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your feedback..."></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div id="successMessage" class="success-message" style="display:none;">
+        <p>Your feedback has been successfully submitted! Thank you!</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Bukit Batok Driving Centre Ltd</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
